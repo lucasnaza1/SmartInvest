@@ -1,4 +1,4 @@
-package modelos;
+package br.com.nazadev.smartinvest.modelos;
 
 //Construtor padrão
 public class Investimento {
@@ -57,7 +57,7 @@ public class Investimento {
 // Métodos de comportamento
 
 public double calcularRendimentoBruto(){
-        return valorInicial * (Math.pow(1 + taxaAnual, prazoDias/365) - 1);
+        return valorInicial * (Math.pow(1 + taxaAnual, prazoDias / 365.0) - 1);
 }
 public double calcularRendimentoLiquido(double aliquotaIR){
         double rendimentoBruto = calcularRendimentoBruto();
